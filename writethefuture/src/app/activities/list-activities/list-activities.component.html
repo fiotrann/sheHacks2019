@@ -1,11 +1,11 @@
 <section id="activity-list">
   <h1>Some good deeds</h1>
   <div class="row">
-    <article class="activity-item col" *ngFor="let activity of activitiesList">
+    <article class="activity-item col p-4" *ngFor="let activity of activitiesList">
       <!-- <i class="fas {{ activity.image }} circle-icon"></i> -->
       <h2>{{ activity.name }}</h2>
       <img style="height: 100px" src="{{ activity.image }}" />
-      <p>{{ activity.description }}</p>
+      <p class="pt-3">{{ activity.description }}</p>
       <button class="btn-add" (click)="addToDailyPlan(activity)">
         + Read more
       </button>
