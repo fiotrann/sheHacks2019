@@ -1,5 +1,6 @@
 <section id="activity-list">
   <h1>Some good deeds</h1>
+<<<<<<< HEAD
   <article class="activity-item" *ngFor="let activity of activitiesList">
     <!-- <i class="fas {{ activity.image }} circle-icon"></i> -->
     <h2>{{ activity.name }}</h2>
@@ -9,5 +10,18 @@
       + Read more
     </button>
   </article>
+=======
+  <div class="row">
+    <article class="activity-item col" *ngFor="let activity of activitiesList">
+      <!-- <i class="fas {{ activity.image }} circle-icon"></i> -->
+      <h2>{{ activity.name }}</h2>
+      <img style="height: 100px" src="{{ activity.image }}" />
+      <p>{{ activity.description }}</p>
+      <button class="btn-add" (click)="addToDailyPlan(activity)">
+        + Read more
+      </button>
+    </article>
+  </div>
+>>>>>>> b0e2085614418272f2ef3a8e3fb582e1cd986a0e
 </section>
 <app-activities-details *ngIf="show"> </app-activities-details>
