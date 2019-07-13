@@ -1,8 +1,12 @@
 <section id="activity-list">
-  <h1> List of activities</h1>
+  <h1>Some good deeds</h1>
   <article class="activity-item" *ngFor="let activity of activitiesList">
-    <i class="fas {{activity.image}} circle-icon"></i>
-    <h2>{{activity.name}}</h2>
-    <button class="btn-add" (click)="addToDailyPlan(activity)">+ Add</button>
+    <!-- <i class="fas {{ activity.image }} circle-icon"></i> -->
+    <h2>{{ activity.name }}</h2>
+    <img style="height: 100px" src="{{ activity.image }}" />
+    <p>{{ activity.description }}</p>
+    <button class="btn-add" (click)="addToDailyPlan(activity)">
+      + Read more
+    </button>
   </article>
 </section>

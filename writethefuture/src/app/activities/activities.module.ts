@@ -9,14 +9,17 @@ import { CustomiseFormComponent } from './customise-form/customise-form.componen
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
-
-import {
-  MatDatepickerModule,
-  MatNativeDateModule
-} from '@angular/material';
+import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
+import { ListUsersComponent } from './list-users/list-users.component';
 
 @NgModule({
-  declarations: [ActivitiesComponent, ListActivitiesComponent, ViewPlanComponent, CustomiseFormComponent],
+  declarations: [
+    ActivitiesComponent,
+    ListActivitiesComponent,
+    ListUsersComponent,
+    ViewPlanComponent,
+    CustomiseFormComponent
+  ],
   imports: [
     CommonModule,
     ActivitiesRoutingModule,
@@ -27,4 +30,4 @@ import {
     DragDropModule
   ]
 })
-export class ActivitiesModule { }
+export class ActivitiesModule {}
