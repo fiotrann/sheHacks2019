@@ -47,30 +47,4 @@ export class ViewPlanComponent implements OnInit {
   drop(event: CdkDragDrop<any[]>) {
     moveItemInArray(this.planList, event.previousIndex, event.currentIndex);
   }
-
-  // print() {
-  //   const printContent = this.dailySchedule.nativeElement.innerHTML;
-  //   const printWindow = window.open(
-  //     '',
-  //     '_blank',
-  //     'top=0,left=0,height=100%,width=auto'
-  //   );
-  //   printWindow.document.open();
-  //   printWindow.document.write(`
-  //     <html>
-  //       <head>
-  //         <title>Print tab</title>
-  //         <style>
-  //         //........Customized style.......
-  //         #content {  border: 5px solid red }
-  //         .screen-only  {
-  //           display: none;
-  //           visibility: hidden;
-  //         }
-  //         </style>
-  //       </head>
-  //   <body onload="window.print();window.close()">${printContent}</body>
-  //     </html>`);
-  //   printWindow.document.close();
-  // }
 }
