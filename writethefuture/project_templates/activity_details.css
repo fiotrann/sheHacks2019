@@ -1,0 +1,17 @@
+body {
+  background-color: LightCyan;
+}
+
+.mapouter {
+  position:relative;
+  text-align:right;
+  height:400px;
+  width:1100px;
+}
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:400px;
+  width:1100px;
+}
