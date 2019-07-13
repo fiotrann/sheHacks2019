@@ -11,10 +11,12 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 import { ListUsersComponent } from './list-users/list-users.component';
+import { ActivitiesDetailsComponent } from './activities-details/activities-details.component';
 
 @NgModule({
   declarations: [
     ActivitiesComponent,
+    ActivitiesDetailsComponent,
     ListActivitiesComponent,
     ListUsersComponent,
     ViewPlanComponent,

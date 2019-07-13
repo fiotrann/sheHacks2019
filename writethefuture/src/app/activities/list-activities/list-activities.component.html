@@ -5,8 +5,9 @@
     <h2>{{ activity.name }}</h2>
     <img style="height: 100px" src="{{ activity.image }}" />
     <p>{{ activity.description }}</p>
-    <button class="btn-add" (click)="addToDailyPlan(activity)">
+    <button class="btn-add" (click)="activitiesDetails()">
       + Read more
     </button>
   </article>
 </section>
+<app-activities-details *ngIf="show"> </app-activities-details>
