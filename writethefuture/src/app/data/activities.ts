@@ -14,7 +14,7 @@ export const ActivitiesConst = [
   {
     id: 3,
     name: 'Community',
-    description: 'JKitting scares for those in need',
+    description: 'Kitting scares for those in need',
     image: 'assets/images/knitting.jpg'
   }
 ];

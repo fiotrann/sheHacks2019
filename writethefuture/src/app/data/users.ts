@@ -12,6 +12,6 @@ export const UsersConst = [
   {
     id: 3,
     name: 'Sam Smith',
-    image: 'assets/images//photo.jpg'
+    image: 'assets/images//photo3.jpg'
   }
 ];

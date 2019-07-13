@@ -1,86 +1,8 @@
-<header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Social Hands</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#"
-            >Home <span class="sr-only">(current)</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link disabled"
-            href="#"
-            tabindex="-1"
-            aria-disabled="true"
-            >Disabled</a
-          >
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input
-          class="form-control mr-sm-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-          Search
-        </button>
-      </form>
-    </div>
-  </nav>
-</header>
-
 <main>
   <div class="container">
-    <div class="row primary-details">
+    <div class="row primary-details mt-4 mb-3">
       <div class="col left-details">
         <h2 class="event-name">Park Clean Up</h2>
-        <div class="attendees-info">
-          <h4 class="attendees-number">27 attendees</h4>
-          <div class="attendees-confirmation">
-            <button type="button" class="btn btn-success">&#10003;</button>
-            <button type="button" class="btn btn-danger">&#10007;</button>
-          </div>
-          <!-- attendees-confirmation ends  -->
-        </div>
-        <!-- attendees-info ends  -->
       </div>
       <!-- left-details ends  -->
     </div>
@@ -123,16 +45,24 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="images/cleanup-1.jpg"
+                  src="assets/images/cleanup-1.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="..." />
+                <img
+                  src="assets/images/cleanup-1.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
               </div>
               <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="..." />
+                <img
+                  src="assets/images/cleanup-1.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
               </div>
             </div>
             <a
@@ -165,7 +95,7 @@
       </div>
       <!-- description ends  -->
 
-      <div class="col other-details">
+      <div class="col other-details border rounded-lg">
         <div class="event-details">
           <h3 class="details-title">Details</h3>
           <p class="event-date">Date: Feb 27th, 2019</p>
@@ -177,6 +107,22 @@
           </p>
         </div>
         <!-- event-details ends  -->
+
+        <hr />
+
+        <div class="attendees-info">
+          <h5 class="attendees-number">27 attendees</h5>
+          <div class="attendees-confirmation">
+            <p class="confirmation">Are you coming?</p>
+            Yes:
+            <button type="button" class="btn btn-success">&#10003;</button> No:
+            <button type="button" class="btn btn-danger">&#10007;</button>
+          </div>
+          <!-- attendees-confirmation ends  -->
+        </div>
+        <!-- attendees-info ends  -->
+
+        <hr />
 
         <div class="requirements">
           <h3 class="requirements-title">Requirements</h3>
