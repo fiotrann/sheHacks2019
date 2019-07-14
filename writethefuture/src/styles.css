@@ -2,7 +2,7 @@
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
 body {
-  font-family: Georgia, serif;
+  font-family: sans-serif, serif;
   font-size: 16px;
   text-align: center;
   max-width: 1000px;
@@ -14,8 +14,6 @@ body {
   text-align: left;
   margin-bottom: 50px;
   display: block;
-  overflow: hidden;
-  max-width: 600px;
 }
 
 #customise h1,
@@ -24,8 +22,7 @@ body {
 
   padding: 5px;
   border-bottom: 1px solid #ccc;
-  font-style: italic;
-
+  font-style: bold;
 }
 
 #customise form p label {
@@ -99,8 +96,8 @@ button:hover {
   position: relative;
 }
 
-.daily-schedule-item>h2,
-.daily-schedule-item>p {
+.daily-schedule-item > h2,
+.daily-schedule-item > p {
   margin: 0.6rem 0.2rem 0.6rem 60px;
   font-size: 1rem;
 }
@@ -129,7 +126,6 @@ button.btn-remove {
   color: #888;
 }
 
-
 button.btn-remove {
   position: absolute;
   top: 5px;
@@ -141,13 +137,11 @@ button.btn-remove {
   padding: 0;
 }
 
-
 button.btn-add:hover,
 button.btn-remove:hover {
   background-color: #888;
   color: #fff;
 }
-
 
 button#btn-print,
 button#btn-reset {
@@ -168,7 +162,6 @@ button#btn-reset {
 }
 
 @media (max-width: 600px) {
-
   #customise,
   #activity-list,
   #daily-schedule {

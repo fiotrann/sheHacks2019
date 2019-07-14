@@ -1,13 +1,21 @@
+<img src="assets/images/banner.jpg" style="width: 100%;" class="mb-5" />
 <section id="activity-list">
   <h1>Some good deeds</h1>
-  <article class="activity-item" *ngFor="let activity of activitiesList">
-    <!-- <i class="fas {{ activity.image }} circle-icon"></i> -->
-    <h2>{{ activity.name }}</h2>
-    <img style="height: 100px" src="{{ activity.image }}" />
-    <p>{{ activity.description }}</p>
-    <button class="btn-add" (click)="activitiesDetails()">
-      + Read more
-    </button>
-  </article>
+  <div class="row">
+    <article class="activity-item col" *ngFor="let activity of activitiesList">
+      <!-- <i class="fas {{ activity.image }} circle-icon"></i> -->
+      <h2>{{ activity.name }}</h2>
+      <img
+        style="height: 100px; width: 250px;"
+        class="border rounded"
+        src="{{ activity.image }}"
+      />
+      <p class="p-4">{{ activity.description }}</p>
+      <button class="btn-add" (click)="addToDailyPlan(activity)">
+        + Read more
+      </button>
+    </article>
+  </div>
 </section>
-<app-activities-details *ngIf="show"> </app-activities-details>
+
+<!-- <app-activities-details *ngIf="show"> </app-activities-details> -->

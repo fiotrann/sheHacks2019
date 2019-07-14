@@ -1,22 +1,29 @@
 <section id="activity-list">
   <h1>Change makers</h1>
-  <article class="activity-item" *ngFor="let activity of usersList">
-    <!-- <i class="fas {{ activity.image }} circle-icon"></i> -->
-    <h2>{{ activity.name }}</h2>
-    <img style="height: 100px" src="{{ activity.image }}" />
-    <button class="btn-add" (click)="addToDailyPlan(activity)">
-      + Read more
-    </button>
-  </article>
+  <div class="row">
+    <article class="activity-item col" *ngFor="let activity of usersList">
+      <!-- <i class="fas {{ activity.image }} circle-icon"></i> -->
+      <h2>{{ activity.name }}</h2>
+      <p>
+        <img style="height: 100px" src="{{ activity.image }}" />
+      </p>
+      <button class="btn-add" (click)="addToDailyPlan(activity)">
+        + Read more
+      </button>
+    </article>
+  </div>
 </section>
 
-<section id="activity-list">
-  <div>
-    <button class="btn-add" (click)="addToDailyPlan(activity)">
-      + I want to contribute
+<section id="activity-list" class="w-100">
+  <div class="text-center">
+    <button
+      class="btn-danger rounded mr-4 p-2"
+      (click)="addToDailyPlan(activity)"
+    >
+      I want to contribute
     </button>
-    <button class="btn-add" (click)="addToDailyPlan(activity)">
-      + I have an idea
+    <button class="btn-danger rounded p-2" (click)="addToDailyPlan(activity)">
+      I have an idea
     </button>
   </div>
 </section>
